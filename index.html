@@ -9,11 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>One Million Lines</title>
-
-    <!--     Fonts and Icons -->
-    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <title>Kyle Martin</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -22,7 +18,15 @@
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/blog.css" rel="stylesheet">
+
+    <!-- Open Sans, Lato and Roboto Condensed from Google -->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -35,9 +39,10 @@
     <![endif]-->
   </head>
 
-  <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+  <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -46,115 +51,151 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#jumbotron"><img src="images/top_logo.png" title="One Million Lines Logo" alt="One Million Lines Logo"></a>
+          <a class="navbar-brand" href="#">Kyle<strong>Martin</strong></a>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
+        <div id="navbar" class="navbar-collapse collapse">
+          
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#who">WHO WE ARE</a></li>
-            <li><a href="#get-involved">GET INVOLVED</a></li>
+            <li><a href="../navbar/">Home</a></li>
+            <li class="active"><a href="./">Blog<span class="sr-only">(current)</span></a></li>
+            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+            <li><a href="../navbar-fixed-top/">Fourth Li</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div id="jumbotron" class="jumbotron">
+    <div id="blog-page">
       <div class="container">
-        <h1>Our goal is to inspire <br>Tallahassee to write 1,000,000<br> lines of code_</h1>
-        <p>All over the country people are taking the <strong>HOUR OF CODE</strong> challenge issued by <strong>CODE.org</strong>. Millions of lines of code are being written. In the capital of Florida, Tallahassee, the community is taking the challenge and our goal is to write 1,000,000 lines of code_</p>
-            <!-- Begin MailChimp Signup Form -->
-      <div id="mc_embed_signup" class="row">
-        <div class="col-sm-9">
-         <form action="//kmcoding.us14.list-manage.com/subscribe/post?u=9ff8d3e4506c9944bb1ffc15a&amp;id=9ec15a5f1e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" role="form" novalidate>
-                  
-          <div class="mc-field-group form-group">
-            <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Enter Email">
-          </div>
-        </div>  
-        <div class="col-sm-3">
-          <div id="mce-responses" class="clear">
-            <div class="response" id="mce-error-response" style="display:none"></div>
-            <div class="response" id="mce-success-response" style="display:none"></div>
-          </div>    
-          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9ff8d3e4506c9944bb1ffc15a_9ec15a5f1e" tabindex="-1" value=""></div>
-            <div class="clear"><input type="submit" value="Join the fight" name="subscribe" id="mc-embedded-subscribe" class="btn btn-danger btn-lg"></div>
-          </div>
-      </form>
-      </div>
-        <!--End mc_embed_signup-->
 
+        <div class="row">
 
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/hTWVmn435Ws?showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <div class="col-sm-8 blog-main">
+
+            <div class="blog-post">
+              <h2 class="blog-post-title"><a href="blog-post-link">Sample blog post</a></h2>
+              <p class="blog-post-meta"><a type="button" class="btn btn-danger" href="blog-post-link"> 55 comments</a> January 1, 2014 by <a href="#">Mark</a></p>
+
+              <img src="images/Vitanz.jpg" title="Vitanz Logo" alt="Vitanz Logo">
+
+              <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
+              <hr>
+              <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+              <blockquote>
+                <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              </blockquote>
+              <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+              <h2>Heading</h2>
+              <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+              <h3>Sub-heading</h3>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+              <pre><code>Example code block</code></pre>
+              <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+              <h3>Sub-heading</h3>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+              <ul>
+                <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                <li>Donec id elit non mi porta gravida at eget metus.</li>
+                <li>Nulla vitae elit libero, a pharetra augue.</li>
+              </ul>
+              <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+              <ol>
+                <li>Vestibulum id ligula porta felis euismod semper.</li>
+                <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+                <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+              </ol>
+              <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis...<a href="blog-post-link"> Read More</a></p>
+            </div><!-- /.blog-post -->
+
+            <div class="blog-post">
+              <h2 class="blog-post-title">Another blog post</h2>
+              <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
+
+              <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+              <blockquote>
+                <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              </blockquote>
+              <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+              <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            </div><!-- /.blog-post -->
+
+            <div class="blog-post">
+              <h2 class="blog-post-title">New feature</h2>
+              <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
+
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+              <ul>
+                <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                <li>Donec id elit non mi porta gravida at eget metus.</li>
+                <li>Nulla vitae elit libero, a pharetra augue.</li>
+              </ul>
+              <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+              <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+            </div><!-- /.blog-post -->
+
+            <nav>
+              <ul class="pager">
+                <li><a href="#">Previous</a></li>
+                <li><a href="#">Next</a></li>
+              </ul>
+            </nav>
+
+          </div><!-- /.blog-main -->
+
+          <div class="col-sm-4 blog-sidebar">
+            <div id="subscribe-box" class="sidebar-module sidebar-module-inset">
+              <h4>Amazed by this Awesome Sauce?!</h4>
+              <p>Join today to receive magical instant updates, majestic somehow free learning resources, and a bunch of other muggle-less goodies, oh by the way, I hate spam so don't worry about that non-shalon!!</p>
+              <form action="http://www.kmcoding.us14.list-manage.com/subscribe/post?u=9ff8d3e4506c9944bb1ffc15a&amp;id=90f40b6708" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div class="form-group">
+                  <input type="email" value="" name="EMAIL" class="form-control" id="mce-responses" placeholder="Email">
+                </div>
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9ff8d3e4506c9944bb1ffc15a_90f40b6708" tabindex="-1" value=""></div>
+                <p class="center"><input type="submit" value="Join for Free" name="subscribe" class="btn btn-warning"></p>
+              </form>
+
             </div>
-          </div>
-        </div>
+            <div class="sidebar-module">
+              <h4>Archives</h4>
+              <ol class="list-unstyled">
+                <li><a href="#">March 2014</a></li>
+                <li><a href="#">February 2014</a></li>
+                <li><a href="#">January 2014</a></li>
+                <li><a href="#">December 2013</a></li>
+                <li><a href="#">November 2013</a></li>
+                <li><a href="#">October 2013</a></li>
+                <li><a href="#">September 2013</a></li>
+                <li><a href="#">August 2013</a></li>
+                <li><a href="#">July 2013</a></li>
+                <li><a href="#">June 2013</a></li>
+                <li><a href="#">May 2013</a></li>
+                <li><a href="#">April 2013</a></li>
+              </ol>
+            </div>
+            <div class="sidebar-module">
+              <h4>Elsewhere</h4>
+              <ol class="list-unstyled">
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+              </ol>
+            </div>
+          </div><!-- /.blog-sidebar -->
 
-        <img src="images/code.png" title="Code Block Logo" alt="Code Block Logo">
-      </div>
+        </div><!-- /.row -->
+
+      </div><!-- /.container -->
     </div>
-
-    <div id="who">
-      <div class="container homepage">
-        <img src="images/academy_brand_med.png" title="Academy Logo" alt="Academy Logo">
-        <h2>WHO WE ARE</h2>
-        <hr>
-        <p>We are <a href="http://http://www.makerbased.com/oml/" target="_blank">MASSIVE Academy</a>. We aim to improve education through both method - effective project-based learning - and material - by teaching skills that are applicable to improving your life today.</p>
-      </div>
-    </div>
-
-   <div id="get-involved"> 
-    <div class="container homepage">
-    <h2>Get Involved</h2>
-    <hr>
-      <div class="row">
-        <div class="col-md-4">
-        <span class="fa-stack fa-4x">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-user fa-stack-1x fa-inverse"></i>
-        </span>
-          <h3>Students</h3>
-          <p>Want to learn how to code? Want to help us get to 1,000,000 lines? Click the button below and we'll let you know how to get involved.</p>
-          <p><a class="btn btn-default" href="#" role="button">Start Learning &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-        <span class="fa-stack fa-4x">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-        </span>
-          <h3>Educators</h3>
-          <p>Want to bring this initiative to your school or institution? Awesome! Click the button below and we'll make it happen.</p>
-          <p><a class="btn btn-default" href="#" role="button">Join the initiative &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-        <span class="fa-stack fa-4x">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-money fa-stack-1x fa-inverse"></i>
-        </span>
-          <h3>Sponsors</h3>
-          <p>We love all the support we get to help host more events, and empower more lives with the knowledge of coding. Click to get involved.</p>
-          <p><a class="btn btn-default" href="#" role="button">Give Support &raquo;</a></p>
-        </div>
-      </div>
-    </div>
-   </div> 
-      
-      <footer>
-       <div class="container"> 
-        <p><img src="images/one_million_bottom_brand.png" title="Footer Logo" alt="Footer Logo"></p>
-       </div> 
-       <div id="back-to-top">
-        <a href="#jumbotron"><i class="fa fa-3x fa-chevron-circle-up" aria-hidden="true"></i></a>
-       </div>
-  
-      </footer>
-
-
+    <footer class="blog-footer">
+      <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
 
 
     <!-- Bootstrap core JavaScript
@@ -163,9 +204,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
-      <script src="js/smoothscroll.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-
   </body>
 </html>
